@@ -1,0 +1,110 @@
+/******************/
+/* DEFAULT STYLES */
+/******************/
+
+
+
+/************************/
+/* BODY AND TEXT FILES */
+/***********************/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: hsl(60, 20%, 95%);
+  color: hsl(235, 65%, 10%);
+  font-family: Futura, serif;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/******************/
+/* NAVIGATION BAR */
+/******************/
+
+.navbar {
+  margin: 0;
+  padding: 1rem;
+  background: hsl(60, 20%, 70%);
+  /*
+  display: sticky;
+  top: 0;
+  z-index: 1000;
+  */
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: hsl(235, 65%, 10%);
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: hsl(60, 20%, 50%);
+}
