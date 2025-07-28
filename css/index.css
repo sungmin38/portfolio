@@ -10,7 +10,7 @@ header h1 {
 header .intro {
   margin: 0;
   padding: 2rem;
-  background: hsl(60, 20%, 90%);
+  /* background: hsl(60, 20%, 90%); */
 }
 
 header p {
@@ -19,32 +19,3 @@ header p {
   font-size: 1.5rem;
   text-align: center;
 }
-
-/*
-.image-and-text {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.image-and-text img {
-  max-width: 500px;
-  height: auto;
-}
-
-.image-and-text p {
-  flex: 1;
-  text-align: justified;
-}
-
-@media (max-width: 768px) {
-  .image-and-text {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .image-and-text img {
-    max-width: 100%;
-  }
-}
-*/

@@ -6,19 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/projects.css">
+    <title>Sungmin Choi: Projects</title>
   </head>
 
   <body>
     <nav class="navbar">
       <ul>
-        <li><a href="#index">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
     
     <header>
       <h1>Projects</h1>
+      <p>Here are a few projects that I'm excited to share.</p>
     </header>
+
+    <section class="projects">
+      <div class="project-card">
+        <div class="image-and-text">
+          <div class="image">
+            <img src="images/self-balancing-rc-robot.jpg" alt="Self-balancing RC robot">
+          </div>
+
+          <div class="text">
+            <h3>Self-Balancing RC Robot</h3>
+            <p>This was a team project where we built a two-wheeled self-balancing robot capable of staying upright and responding to wireless directional commands. We used an Arduino Nano 33 BLE Sense as the main controller and two DRV8833 dual H-bridge motor drivers in parallel to drive the motors via PWM signals.</p>
+            <p>For wireless control, we implemented BLE communication with an iPhone app developed in Flutter (using Dart), allowing real-time directional commands to be sent to the robot. Orientation was measured using a BMI270 accelerometer and BMM150 gyroscope, with tilt data fused using a complementary filter in C++. A closed-loop PID control system was then applied to maintain balance.</p>
+            <p>Before tuning on hardware, we simulated the control system in Simulink to estimate PID parameter ranges, which helped speed up experimental adjustments. Although tuning was the most time-consuming aspect of the project, the robot ultimately maintained stable balance and executed forward, backward, and turning movements smoothly.</p>
+            <p>My role focused on developing C++ algorithms for sensor fusion, closed-loop PID control, movement control, and Bluetooth communication, as well as implementing and verifying the wiring connections between the control board and motor driver circuits.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="image-and-text">
+          <div class="image">
+            <img src="images/metal-detecting-rc-car.jpg" alt="Metal-detecting RC car">
+            <img src="images/metal-detecting-rc-car-remote.jpg" alt="etal-detecting RC car remote">
+
+            <div class="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/Ud4zuF3VCIo" 
+                title="Metal-Detecting RC Car Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>  
+          </div>
+
+          <div class="text">
+            <h3>Metal-Detecting RC Car</h3>
+            <p>This team project involved developing a remote-controlled car capable of detecting metals and providing feedback to the operator based on detection strength. My primary contribution focused on circuit design for both the vehicle and the handheld remote.</p>
+            <p>We implemented a dual-microcontroller architecture using an STM32L051 on the vehicle and an EFM8LB12 on the remote. A Colpitts oscillator-based metal detection circuit paired with an inductor coil enabled reliable detection of all Canadian coins. For motor control, we designed an H-bridge circuit incorporating optocouplers and MOSFETs to ensure electrical isolation and efficient switching. Bi-directional communication between the car and remote was achieved via JDY-40 2.4 GHz radio modules. The remote featured a joystick for speed and directional control, an LCD for displaying real-time inductance values, and a buzzer that varied in intensity according to detected metal signal strength.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="image-and-text">
+          <div class="image">
+            <img src="images/work-in-progress.jpg" alt="Work in progress">
+          </div>
+
+          <div class="text">
+            <h3>RC Quadcopter (Ongoing)</h3>
+            <p>This is an individual project I began in late-July, inspired by my passion for photography. The goal is to develop a compact drone with integrated camera capabilities, similar to the DJI Mini Series. The design features an X-frame with a 250mm wheelbase, powered by 2205 2300 kV brushless DC motors, 5x3 bi-blade propellers, 30A electronic speed controllers, and a 3S 2200 mAh LiPo battery.</p>
+            <p>I am currently designing a custom STM32F405-based flight controller in Altium Designer, which will be fabricated and assembled into a functional PCB. Once complete, the quadcopter will run on ArduPilot firmware for advanced flight control.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
